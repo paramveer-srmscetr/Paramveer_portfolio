@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      @media screen and (min-width: 600px) {
+ 
+}
+
+@media screen and (max-width: 600px) {
+ 
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5e5e5e;
+            margin: 0;
+            padding: 0;
+            font-family: "Kanit", sans-serif;
+        }
+        nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(3, 5, 51);
+  }
+
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 23px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+  }
+  nav ul li a:hover {
+    color: aquamarine;
+    font-size: 1.02rem;
+  }
+  .lefts {
+    font-size: 1.5rem;
+    color: whitesmoke;
+
+  }
+        .container {
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 20px ;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 94%;
+            padding: 10px;
+            border: 1px solid #080808;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            height: 150px;
+        }
+        .btn {
+            background: #005ec2;
+            color: #fff;
+            border: none;
+            margin-left: 45%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .btn :hover{
+            background-color: #080808;
+            
+        }
+
+      
+    footer{
+ 
+ background-color: rgb(3, 18, 31);
+
+
+}
+.footer-box{
+display: flex;
+justify-content: space-evenly;
+padding:23px 50px;
+
+}
+
+
+.footer-box>div{
+ width: 250px;
+}
+
+.footer-box ul{
+ list-style: none;
+}
+.footer-box ul a{
+ text-decoration: none;
+ color: antiquewhite;
+}
+
+.footer-box ul a:hover{
+ color: aqua;
+}
+
+footer .text-footer{
+color: whitesmoke;
+padding: 5px;
+text-align: center;
+
+}
+.footer-box1{
+    color: aliceblue;
+font-size: 1.6rem;
+}
+.footer-img{
+width: 80px;
+border-radius: 30%;
+}
+
+ /* icons */
+ .fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: #292f31;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #e02e2e;
+  color: white;
+}
+
+    </style>
+
+</head>
+<body>
+   
+        <nav>
+          <div class="lefts">Paramveer's Portfolio</div>
+          <div class="right">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="about.html" target="_blank">About</a></li>
+              <li><a href="service.html" target="_blank">Service</a></li>
+              <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+    <footer>
+        <div class="footer-box">
+          <img src="ishupic-removebg-preview.png" alt="" class="footer-img" />
+          <div class="footer-box1">Paramveer's Developer Portfolio</div>
+          <div class="footer-box2">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="about.html" target="_blank">About</a></li>
+              <li><a href="contact.html " target="_blank">Contact</a></li>
+              <li><a href="service.html" target="_blank">Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-box3">
+            <ul>
+              <li><a href="https://instagram.com/_paramveer_rajput" class="fa fa-instagram" target="_blank"></a></li>
+              <li><a href="https://fb.com" class="fa fa-facebook" target="_blank"></a></li>
+              <li><a href="https://twitter.com" class="fa fa-twitter" target="_blank"></a></li>
+          
+            </ul>
+          </div>
+          <div class="footer-box4">
+            <ul>
+              
+              <li><a href="https://www.linkedin.com/in/paramveer-singh-a61764224/" class="fa fa-linkedin" target="_blank"> </a></li>
+              <li><a href="https://github.com/paramveer-srmscetr" class="fa fa-github" target="_blank"></a></li>
+              <li><a href="https://youtube.com/@paramveerchauhan1436" class="fa fa-youtube" target="_blank"></a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <div class="text-footer">
+          www.paramveerportfolio.com | All right reserved &copy copyright
+        </div>
+      </footer>
+  
+</body>
+</html>
